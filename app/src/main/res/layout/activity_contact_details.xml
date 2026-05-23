@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CFCA9"
+    tools:context=".ContactDetails">
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CONTACT DETAILS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:background="#ABF7E4"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvContactDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="56dp"
+        android:background="#E9F08D"
+        android:padding="20dp"
+        android:text="Name:\nContact Number: \nEmail: \nAge:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDetails" />
+
+    <ImageView
+        android:id="@+id/imgvCall"
+        android:layout_width="154dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/kol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContactDetails" />
+
+    <ImageView
+        android:id="@+id/imgvDelete"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/del"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContactDetails" />
+
+    <TextView
+        android:id="@+id/tvCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="CALL?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        app:layout_constraintTop_toBottomOf="@id/imgvCall"
+        app:layout_constraintStart_toStartOf="@id/imgvCall"
+        app:layout_constraintEnd_toEndOf="@id/imgvCall"/>
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DELETE?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        app:layout_constraintTop_toBottomOf="@id/imgvDelete"
+        app:layout_constraintStart_toStartOf="@id/imgvDelete"
+        app:layout_constraintEnd_toEndOf="@id/imgvDelete"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7cfca9"
+    tools:context=".AverageResult">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AVERAGE RESULT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:background="#abf7e4"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgHeron"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/wow"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/resultContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="#c6cc7a"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imgHeron"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--<TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="10dp"/>-->
+
+        <TextView
+            android:id="@+id/tvMathGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Math Grade"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvMAPEHGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAPEH Grade"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvScienceGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Science Grade"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvEnglishGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English Grade"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvFilipinoGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filipino Grade"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#e9f08d"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvComputedAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computed Average"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="#e9f08d"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@id/resultContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
