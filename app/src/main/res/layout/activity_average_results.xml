@@ -6,18 +6,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7cfca9"
-    tools:context=".AverageResult">
+    android:background="#FDD8E5"
+    tools:context=".AverageResults">
 
     <TextView
         android:id="@+id/tvHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="AVERAGE RESULT"
+        android:text="Grade Results"
+        android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#1B5E20"
-        android:background="#abf7e4"
+        android:textColor="#FBF5DD"
+        android:background="#C77FD3"
         android:gravity="center"
         android:padding="12dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +42,7 @@
         android:orientation="vertical"
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="32dp"
-        android:background="#c6cc7a"
+        android:background="#F1F7D4"
         android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@id/imgHeron"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,61 +62,61 @@
             android:id="@+id/tvMathGrade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Math Grade"
+            android:text="Grade in Math"
             android:textSize="18sp"
             android:padding="8dp"
-            android:background="#e9f08d"
+            android:background="#D8A1E1"
             android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvMAPEHGrade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MAPEH Grade"
+            android:text="Grade in MAPEH"
             android:textSize="18sp"
             android:padding="8dp"
-            android:background="#e9f08d"
+            android:background="#D8A1E1"
             android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvScienceGrade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Science Grade"
+            android:text="Grade in Science"
             android:textSize="18sp"
             android:padding="8dp"
-            android:background="#e9f08d"
+            android:background="#D8A1E1"
             android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvEnglishGrade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="English Grade"
+            android:text="Grade in English"
             android:textSize="18sp"
             android:padding="8dp"
-            android:background="#e9f08d"
+            android:background="#D8A1E1"
             android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvFilipinoGrade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Filipino Grade"
+            android:text="Grade in Filipino"
             android:textSize="18sp"
             android:padding="8dp"
-            android:background="#e9f08d"
+            android:background="#D8A1E1"
             android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tvComputedAverage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Computed Average"
+            android:text="Average Grade"
             android:textSize="20sp"
             android:textStyle="bold"
             android:padding="10dp"
-            android:background="#e9f08d"/>
+            android:background="#AB99CC"/>
     </LinearLayout>
 
     <Button
@@ -124,7 +125,7 @@
         android:layout_height="wrap_content"
         android:text="BACK"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#2E7D32"
+        android:backgroundTint="#5A17D1"
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="32dp"
         app:layout_constraintTop_toBottomOf="@id/resultContainer"

@@ -6,17 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#EFC9D6">
+    android:background="#FDD8E5">
 
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
-        android:background="#AD95D8"
+        android:background="#C77FD3"
         android:gravity="center"
         android:text="Android Use Case"
-        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textColor="#FBF5DD"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,32 +30,34 @@
         android:id="@+id/computeAvg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="COMPUTE AVERAGE"
+        android:text="Compute Average"
+        android:textColor="#FBF5DD"
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintBottom_toTopOf="@id/manageContacts"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="32dp"
-        android:backgroundTint="#2E7D32"
+        android:backgroundTint="#5A17D1"
         android:layout_marginBottom="40dp"/>
 
     <Button
         android:id="@+id/manageContacts"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="MANAGE CONTACTS"
+        android:text="Contacts"
+        android:textColor="#FBF5DD"
         app:layout_constraintTop_toBottomOf="@id/computeAvg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="32dp"
-        android:backgroundTint="#2E7D32"
+        android:backgroundTint="#5A17D1"
         android:layout_marginBottom="40dp"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@id/computeAvg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +67,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@id/manageContacts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
